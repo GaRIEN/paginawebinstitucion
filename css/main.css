@@ -1,0 +1,933 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  position: absolute;
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 100;
+}
+.header .header__div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  /*stylos de las listas*/
+}
+.header .header__div .logo {
+  width: 140px;
+  height: 60px;
+}
+.header .header__div .logo img {
+  width: 100%;
+  height: 100%;
+}
+.header .header__div .header__div-logo {
+  margin: 10px 0 0 50px;
+}
+.header .header__div .header__div-nav {
+  margin-right: 50px;
+  display: none;
+}
+.header .header__div .header__div-nav .nav__ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header .header__div .header__div-nav .nav__ul .nav__ul-li {
+  position: relative;
+}
+.header .header__div .header__div-nav .nav__ul .nav__ul-li .li__a {
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
+  border-radius: 20px;
+  transition: all 300ms ease;
+}
+.header .header__div .header__div-nav .nav__ul .nav__ul-li .li__a:hover {
+  background-color: #176cff;
+  transform: scale(1.1);
+  border-radius: 20px;
+}
+.header .header__div .header__div-nav .nav__ul .nav__ul-li .li__ul {
+  position: absolute;
+  width: 170px;
+  height: auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  padding: 14px 0px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  transition: all 300ms ease;
+  visibility: hidden;
+  opacity: 0;
+}
+.header .header__div .header__div-nav .nav__ul .nav__ul-li .li__ul .li__ul-li a {
+  display: block;
+  font-size: 1.2rem;
+  color: #176cff;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  transition: all 300ms ease;
+}
+.header .header__div .header__div-nav .nav__ul .nav__ul-li .li__ul .li__ul-li a:hover {
+  font-size: 1.1rem;
+  background-color: #176cff;
+  color: white;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+}
+.header .header__div .header__div-nav .nav__ul .nav__ul-li .li__ul::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid white;
+  position: absolute;
+  top: -12px;
+  left: 20px;
+}
+.header .header__div .header__div-nav .nav__ul .nav__ul-li:hover .li__ul {
+  visibility: visible;
+  opacity: 1;
+}
+.header .header__div .header__div-nav .nav__ul .nav__ul-li-matriculate {
+  background-color: #ffb417;
+  border-radius: 20px;
+}
+.header .header__div .header__div-nav .nav__ul .nav__ul-li-matriculate .li__a {
+  color: black;
+}
+.header .header__div .header__div-nav .nav__ul .nav__ul-li-matriculate .li__a:hover {
+  color: white;
+}
+.header .header__icon-menu {
+  display: none;
+}
+
+.main .container__video {
+  width: 100%;
+  height: 800px;
+  z-index: -100;
+}
+.main .container__video .container__video--informativo {
+  overflow: hidden;
+  -o-object-fit: fill;
+     object-fit: fill;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -100;
+}
+.main .container__poster {
+  width: 100%;
+  height: auto;
+  padding-bottom: 50px;
+}
+.main .container__poster .poster__img {
+  width: 100%;
+  height: auto;
+}
+.main .main__section--informationIns .informationIns__container--bienvenido {
+  text-align: center;
+}
+.main .main__section--informationIns .informationIns__container--bienvenido .bienvenido__title {
+  padding-bottom: 10px;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #176cff;
+}
+.main .main__section--informationIns .informationIns__container--bienvenido .bienvenido__separador {
+  margin: 20px auto;
+  width: 50vw;
+  max-width: 350px;
+  border: none;
+  border-top: 3px solid #17b5ff;
+}
+.main .main__section--informationIns .informationIns__container--bienvenido .bienvenido__parrafo {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 800px;
+  font-size: 1rem;
+  color: black;
+}
+.main .main__section--informationIns .informationIns__container--nosotros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  z-index: -100;
+}
+.main .main__section--informationIns .informationIns__container--nosotros .nosotros__container--img {
+  position: relative;
+  margin: 10px;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+.main .main__section--informationIns .informationIns__container--nosotros .nosotros__container--img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(217, 24, 24, 0.5);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  border-radius: 50%;
+}
+.main .main__section--informationIns .informationIns__container--nosotros .nosotros__container--img:hover::before {
+  opacity: 1;
+  border-radius: 50%;
+}
+.main .main__section--informationIns .informationIns__container--nosotros .nosotros__container--img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.3s ease-in-out;
+  border-radius: 50%;
+}
+.main .main__section--informationIns .informationIns__container--nosotros .nosotros__container--img:hover img {
+  transform: scale(1.1);
+}
+.main .main__section--informationIns .informationIns__container--nosotros .nosotros__container--img .img__title {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 70px;
+  border-radius: 50%;
+}
+.main .main__section--informationIns .informationIns__container--nosotros .nosotros__container--img .img__title p {
+  color: rgb(255, 255, 255);
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.main .main__section--servicios {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  background-color: #176cff;
+}
+.main .main__section--servicios .section__servicios--educacionCalidad {
+  padding: 30px 10px 0px 10px;
+  text-align: center;
+}
+.main .main__section--servicios .section__servicios--educacionCalidad .educacionCalidad__container--title {
+  padding-bottom: 10px;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #ffb417;
+}
+.main .main__section--servicios .section__servicios--educacionCalidad .educacionCalidad__container--separador {
+  margin: 20px auto;
+  width: 50vw;
+  max-width: 350px;
+  border: none;
+  border-top: 3px solid #ffb417;
+}
+.main .main__section--servicios .section__servicios--educacionCalidad .educacionCalidad__container--parrafo {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 800px;
+  font-size: 1rem;
+  color: white;
+}
+.main .main__section--servicios .servicios__container {
+  width: 100%;
+  max-width: 1800px;
+  padding: 10px 20px 50px 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+.main .main__section--servicios .servicios__container .servicios__container--card {
+  position: relative;
+  width: 400px;
+  min-width: 280px;
+  height: 550px;
+  min-height: 450px;
+  border: solid 3px white;
+}
+.main .main__section--servicios .servicios__container .servicios__container--card .card__imagen {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.main .main__section--servicios .servicios__container .servicios__container--card .card__imagen .card__imagen--fondoCurvo {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main .main__section--servicios .servicios__container .servicios__container--card .card__imagen .card__imagen--fondoCurvo img {
+  width: 100%;
+  height: 150px;
+}
+.main .main__section--servicios .servicios__container .servicios__container--card .card__imagen .card__imagen--fondoCurvo div {
+  position: absolute;
+  display: flex;
+  margin-top: -70px;
+}
+.main .main__section--servicios .servicios__container .servicios__container--card .card__imagen .card__imagen--fondoCurvo div .imagen__fondoCurvo--icon .fa-face-grin-wide,
+.main .main__section--servicios .servicios__container .servicios__container--card .card__imagen .card__imagen--fondoCurvo div .imagen__fondoCurvo--icon .fa-user-graduate,
+.main .main__section--servicios .servicios__container .servicios__container--card .card__imagen .card__imagen--fondoCurvo div .imagen__fondoCurvo--icon .fa-pen-ruler {
+  font-size: 2.7rem;
+  color: rgb(244, 244, 244);
+}
+.main .main__section--servicios .servicios__container .servicios__container--card .card__imagen .card__imagen--fondoCurvo div .imagen__fondoCurvo--icon .fa-user-graduate {
+  color: rebeccapurple;
+}
+.main .main__section--servicios .servicios__container .servicios__container--card .card__imagen .card__imagen--fondoCurvo div .imagen__fondoCurvo--icon .fa-pen-ruler {
+  color: black;
+}
+.main .main__section--servicios .servicios__container .servicios__container--card .card__imagen .card__imagen--fondoCurvo div .imagen__fondoCurvo--servicio {
+  margin-left: 10px;
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: rgb(244, 244, 244);
+}
+.main .main__section--servicios .servicios__container .servicios__container--card .card__imagen .card__imagen--fondoCurvo div .primaria {
+  color: black;
+}
+.main .main__section--servicios .servicios__container .servicios__container--card .card__imagen .card__imagen--fondoCurvo div .secundaria {
+  color: rebeccapurple;
+}
+.main .main__section--servicios .servicios__container .servicios__container--card .card__imagen img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .main__section--servicios .servicios__container .servicios__container--card .card__imagen .container__card--button {
+  position: absolute;
+  padding: 10px;
+  align-self: center;
+  margin-top: 350px;
+  display: block;
+  background: #ffb417;
+  font-weight: 500;
+  color: white;
+  border-radius: 20px;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.main .main__section--servicios .servicios__container .servicios__container--card .card__imagen .buttom-primaria {
+  background: #17ffff;
+  color: black;
+}
+.main .main__section--servicios .servicios__container .servicios__container--card .card__imagen .buttom-secundaria {
+  background: #beff17;
+  color: rebeccapurple;
+}
+.main .main__section--infraestructura {
+  width: 100%;
+}
+.main .main__section--infraestructura .infraestructura__information--container {
+  padding: 30px 10px 50px 10px;
+  text-align: center;
+}
+.main .main__section--infraestructura .infraestructura__information--container .information__container--title {
+  padding-bottom: 10px;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #176cff;
+}
+.main .main__section--infraestructura .infraestructura__information--container .information__container--separador {
+  margin: 20px auto;
+  width: 50vw;
+  max-width: 350px;
+  border: none;
+  border-top: 3px solid #17b5ff;
+}
+.main .main__section--infraestructura .infraestructura__information--container .information__container--parrafo {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 800px;
+  font-size: 1rem;
+  color: black;
+}
+.main .main__section--infraestructura .infraestructura__information--locales {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1000px;
+  gap: 15px;
+}
+.main .main__section--infraestructura .infraestructura__information--locales .locales__card {
+  position: relative;
+  margin: 10px;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+.main .main__section--infraestructura .infraestructura__information--locales .locales__card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+.main .main__section--infraestructura .infraestructura__information--locales .locales__card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.3s ease-in-out;
+}
+.main .main__section--infraestructura .infraestructura__information--locales .locales__card:hover img {
+  transform: scale(1.2);
+}
+.main .main__section--infraestructura .infraestructura__information--locales .locales__card .card__ubicacion {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+.main .main__section--galeria .galeria__information--container {
+  padding: 30px 10px 50px 10px;
+  text-align: center;
+}
+.main .main__section--galeria .galeria__information--container .information__container--title {
+  padding-bottom: 10px;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #176cff;
+}
+.main .main__section--galeria .galeria__information--container .information__container--separador {
+  margin: 20px auto;
+  width: 50vw;
+  max-width: 350px;
+  border: none;
+  border-top: 3px solid #17b5ff;
+}
+.main .main__section--galeria .galeria__information--container .information__container--parrafo {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 800px;
+  font-size: 1rem;
+  color: black;
+}
+.main .main__section--galeria .slider {
+  overflow: hidden;
+  width: 32%;
+  min-width: 300px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+.main .main__section--galeria .slider .slider--inner {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 400px;
+  min-height: 150px;
+  transition: all 0.7s ease-in;
+}
+.main .main__section--galeria .slider .slider--inner img {
+  aspect-ratio: 16/9;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.main .main__section--ubicacion .ubicacion__information--container {
+  padding: 30px 10px 50px 10px;
+  text-align: center;
+}
+.main .main__section--ubicacion .ubicacion__information--container .information__container--title {
+  padding-bottom: 10px;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #176cff;
+}
+.main .main__section--ubicacion .ubicacion__information--container .information__container--separador {
+  margin: 20px auto;
+  width: 50vw;
+  max-width: 350px;
+  border: none;
+  border-top: 3px solid #17b5ff;
+}
+.main .main__section--ubicacion .ubicacion__information--container .information__container--parrafo {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 800px;
+  font-size: 1rem;
+  color: black;
+}
+.main .main__section--ubicacion .ubicacion__information--maps {
+  display: grid;
+  width: 60%;
+  grid-template-columns: minmax(240px, 2fr) 1fr;
+  grid-auto-rows: auto;
+  place-content: center;
+  margin: 0 auto;
+}
+.main .main__section--ubicacion .ubicacion__information--maps .maps__container--mapa {
+  width: 100%;
+  height: 350px;
+}
+.main .main__section--ubicacion .ubicacion__information--maps .maps__container--mapa iframe {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.main .main__section--ubicacion .ubicacion__information--maps .maps__container--informacioncolegio {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 25px 10px 20px 5px;
+  background-color: #176cff;
+}
+.main .main__section--ubicacion .ubicacion__information--maps .maps__container--informacioncolegio h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffb417;
+  align-self: center;
+}
+.main .main__section--ubicacion .ubicacion__information--maps .maps__container--informacioncolegio .container__informacioncolegio {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.main .main__section--ubicacion .ubicacion__information--maps .maps__container--informacioncolegio .container__informacioncolegio .container__informacioncolegio--card {
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+.main .main__section--ubicacion .ubicacion__information--maps .maps__container--informacioncolegio .container__informacioncolegio .container__informacioncolegio--card .iconos-maps {
+  width: 50px;
+  height: auto;
+  border-bottom: 2px solid rgb(28, 134, 255);
+}
+.main .main__section--ubicacion .ubicacion__information--maps .maps__container--informacioncolegio .container__informacioncolegio .container__informacioncolegio--card .iconos-maps .informacion-ubicacion .icon-info {
+  height: 100%;
+  margin: 0 20px 5px 25px;
+  font-size: 1.3rem;
+  color: white;
+}
+.main .main__section--ubicacion .ubicacion__information--maps .maps__container--informacioncolegio .container__informacioncolegio .container__informacioncolegio--card .info {
+  font-size: 0.8rem;
+  color: #fcfcfc;
+  padding-left: 10px;
+}
+
+.footer {
+  margin-top: 80px;
+  width: 100%;
+  position: relative;
+  padding-top: 30px;
+  background-color: #176cff;
+  height: auto;
+}
+.footer .footer__logo {
+  position: absolute;
+  width: 200px;
+  height: 150px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background: url(../assets/img/logo.png) no-repeat center/contain;
+  margin-top: -100px;
+  filter: drop-shadow(2px 8px 5px white);
+}
+.footer .footer__container {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  margin: 0 auto;
+  grid-auto-rows: auto;
+  place-items: center;
+  padding-bottom: 20px;
+}
+.footer .footer__container .container__derechos {
+  width: 100%;
+  text-align: center;
+}
+.footer .footer__container .container__derechos .derechosautor {
+  font-size: 1rem;
+  color: #fcfcfc;
+  padding-left: 10px;
+}
+.footer .footer__container .container-informacion-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+}
+.footer .footer__container .container-informacion-footer .info {
+  font-size: 1rem;
+  color: #fcfcfc;
+  padding-left: 10px;
+  line-height: 2rem;
+}
+.footer .footer__container .container-informacion-footer .info i {
+  padding-right: 10px;
+}
+
+/*styles para eduacion inicial*/
+.main__educacion .img-primaria {
+  background-image: url("https://static.educaweb.com/img/news/ni%C3%B1os-primaria-ordenador.jpg");
+  width: 100%;
+  height: 450px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+  color: white;
+  font-size: 22px;
+}
+.main__educacion .img-primaria h1 {
+  text-shadow: 7px 7px 10px rgba(0, 0, 0, 0.7);
+}
+.main__educacion .primaria__container {
+  display: flex;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 120px 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.main__educacion .primaria__container .primaria__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main__educacion .primaria__container .primaria__section .barra {
+  background-color: #176cff;
+  width: 30%;
+  height: 10px;
+}
+.main__educacion .primaria__container .primaria__section h2 {
+  font-size: 32px;
+  text-align: center;
+  font-weight: 900;
+  width: 80%;
+  margin-top: 7px;
+  margin-bottom: 25px;
+}
+.main__educacion .primaria__container .primaria__section .primaria__description {
+  text-align: center;
+  font-size: 18px;
+}
+.main__educacion .primaria__container .primaria__section .primaria__description p {
+  margin: 15px auto;
+  width: 90%;
+}
+.main__educacion .primaria__container img {
+  width: 30%;
+}
+.main__educacion .primaria__postula {
+  width: 100%;
+}
+.main__educacion .primaria__postula .postula__banner {
+  background-image: url(https://www.winston93.edu.mx/wp-content/uploads/2021/04/WC-23.png);
+  width: 100%;
+  height: 600px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.main__educacion .primaria__postula .postula__banner img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+.main__educacion .primaria__postula .postula__banner .postula__description {
+  position: absolute;
+  padding: 35px 70px;
+  color: white;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.main__educacion .primaria__postula .postula__banner .postula__description h3 {
+  font-size: 30px;
+}
+.main__educacion .primaria__postula .postula__banner .postula__description div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.main__educacion .primaria__postula .postula__banner .postula__description p {
+  font-size: 18px;
+}
+.main__educacion .primaria__postula .postula__banner .postula__description .button {
+  border: none;
+  background-color: #ffb417;
+  padding: 15px 0;
+  border-radius: 15px;
+  color: white;
+  font-weight: 800;
+  font-size: 18px;
+  text-align: center;
+}
+.main__educacion .fondo {
+  background-image: url(../assets/img/fondo-pagina.jpg);
+  background-repeat: repeat;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  background-blend-mode: lighten;
+}
+.main__educacion .fondo .eventos__container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.main__educacion .fondo .eventos__container h2 {
+  font-size: 32px;
+  text-align: center;
+  font-weight: 900;
+  width: 80%;
+  margin-top: 7px;
+  margin-bottom: 45px;
+}
+.main__educacion .fondo .eventos__container .eventos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: repeat(3, 250px); */
+  gap: 20px;
+  background-color: #ffb417;
+  padding: 20px;
+  border-radius: 20px;
+}
+.main__educacion .fondo .eventos__container .eventos img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+.main__educacion .fondo .eventos__container .eventos .eventos__item1 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.main__educacion .fondo .eventos__container .eventos .eventos__item4 {
+  grid-column: span 3;
+}
+
+/*styles para eduacion inicial*/
+.main-matricula {
+  padding: 70px;
+}
+.main-matricula .contenedor-form .form {
+  background: white;
+  width: 95%;
+  max-width: 800px;
+  margin: auto;
+  padding: 5px 35px;
+  padding-bottom: 30px;
+  border-radius: 3px;
+}
+.main-matricula .contenedor-form .form .form-header .form-title {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  font-weight: normal;
+  font-family: sans-serif;
+  color: rgb(14, 92, 187);
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+.main-matricula .contenedor-form .form .form-header .form-parrafo,
+.main-matricula .contenedor-form .form .form-header .form-atencion {
+  font-size: 1.1rem;
+}
+.main-matricula .contenedor-form .form .form-label {
+  position: relative;
+  display: block;
+  color: black;
+  font-size: 1rem;
+  padding: 10px 0 10px 5px;
+}
+.main-matricula .contenedor-form .form .form-input {
+  background: rgba(255, 255, 255, 0.7);
+  border: 2px solid #acacac;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  color: rgb(0, 0, 0);
+}
+.main-matricula .contenedor-form .form .enviar {
+  width: 100%;
+  height: 50px;
+  outline: none;
+  background: rgb(14, 92, 187);
+  font-size: 1.5rem;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  .header {
+    display: flex;
+    align-items: center;
+  }
+  .header .menubar .header__div-nav {
+    position: absolute;
+    display: block;
+    margin-top: 70px;
+    width: 100%;
+    padding: 20px;
+    background-color: #176cff;
+  }
+  .header .menubar .header__div-nav .nav__ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .header .menubar .header__div-nav .nav__ul .nav__ul-li .li__ul {
+    z-index: 100;
+    margin-top: 10px;
+    margin-left: 70px;
+  }
+  .header .menubar .prueba {
+    display: none;
+  }
+  .header .header__icon-menu {
+    display: block;
+    margin-right: 50px;
+    z-index: 100;
+  }
+  .header .header__icon-menu .fa-bars {
+    color: white;
+    font-size: 1.5rem;
+  }
+  .main .container__video {
+    height: 650px;
+  }
+  .main .main__section--ubicacion .ubicacion__information--maps {
+    grid-template-columns: 300px;
+    grid-auto-rows: 350px 350px;
+  }
+  .main__educacion .img-primaria {
+    font-size: 18px;
+  }
+  .main__educacion .primaria__container {
+    flex-direction: column;
+    padding: 80px 20px;
+  }
+  .main__educacion .primaria__container .primaria__section h2 {
+    font-size: 25px;
+  }
+  .main__educacion .primaria__container img {
+    width: 50%;
+  }
+  .main__educacion .primaria__postula .postula__banner .postula__description {
+    padding: 10px 20px;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .main__educacion .primaria__postula .postula__banner .postula__description h3 {
+    font-size: 20px;
+  }
+  .main__educacion .fondo .eventos__container .eventos {
+    padding: 10px;
+    gap: 10px;
+    grid-template-rows: repeat(4, 150px);
+  }
+  .main__educacion .fondo .eventos__container .eventos h2 {
+    font-size: 25px;
+  }
+  .main__educacion .fondo .eventos__container .eventos .eventos__item1,
+  .main__educacion .fondo .eventos__container .eventos .eventos__item2,
+  .main__educacion .fondo .eventos__container .eventos .eventos__item3 {
+    grid-column: span 3;
+    grid-row: span 1;
+  }
+  .footer .footer__container {
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .header .header__div .header__div-nav {
+    display: inline-block;
+  }
+  .main .container__video {
+    height: 750px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header .header__div .header__div-nav {
+    display: inline-block;
+  }
+}/*# sourceMappingURL=main.css.map */

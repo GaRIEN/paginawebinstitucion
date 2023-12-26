@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link para iconos -->
+    <script
+      src="https://kit.fontawesome.com/a3442d3abc.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__div">
+        <a href="./index.html" class="logo header__div-logo">
+          <img src="./assets/img/logo.png" alt="logo del colegio" />
+        </a>
+        <nav class="header__div-nav">
+          <ul class="nav__ul">
+            <li class="nav__ul-li">
+              <a href="#" class="li__a">Inicio</a>
+              <ul class="li__ul li__ul-inicio">
+                <li class="li__ul-li">
+                  <a href="./index.html#nosotros">Nosotros</a>
+                </li>
+                <li class="li__ul-li">
+                  <a href="./index.html#servicios-ofrecidos">Servicios</a>
+                </li>
+                <li class="li__ul-li">
+                  <a href="./index.html#infraestructura-institucion"
+                    >Infraestructura</a
+                  >
+                </li>
+                <li class="li__ul-li">
+                  <a href="./index.html#galeria-fotos-institucion">Galería</a>
+                </li>
+                <li class="li__ul-li">
+                  <a href="./index.html#ubicacion">Ubicacion</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav__ul-li">
+              <a href="#" class="li__a">Nivel Educativo</a>
+              <ul class="li__ul li__ul-nivel-educativo">
+                <li class="li__ul-li">
+                  <a href="./educacion-inicial.html">Educacion Inicial</a>
+                </li>
+                <li class="li__ul-li">
+                  <a href="./educacion-primaria.html">Educacion Primaria</a>
+                </li>
+                <li class="li__ul-li">
+                  <a href="./educacion-secundaria.html">Educacion Secundaria</a>
+                </li>
+                <!-- <li class="li__ul-li">
+                  <a href="">programas complementarios</a>
+                </li> -->
+              </ul>
+            </li>
+            <li class="nav__ul-li">
+              <a href="#" class="li__a">Angenda Cecna</a>
+            </li>
+            <li class="nav__ul-li nav__ul-li-matriculate">
+              <a href="./matricula.html" class="li__a">Matricúlate</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <span class="header__icon-menu"><i class="fa-solid fa-bars"></i></span>
+    </header>
+    <main class="main-matricula">
+      <div class="contenedor-form">
+        <form action="" class="form">
+          <div class="form-header">
+            <h1 class="form-title">Matrícula</h1>
+            <p class="form-parrafo">Reserva tu matrícula</p>
+            <p class="form-atencion">Horario de atención: De lunes a viernes</p>
+          </div>
+          <label for="nombre" class="form-label">Nombres *</label>
+          <input
+            type="text"
+            id="nombre"
+            class="form-input"
+            placeholder="Escriba su nombre"
+          />
+          <label for="apellidos" class="form-label">Apellidos *</label>
+          <input
+            type="text"
+            id="apellidos"
+            class="form-input"
+            placeholder="Escriba su nombre"
+          />
+          <label for="apoderado" class="form-label">Apoderado *</label>
+          <select name="apoderado" id="apoderado" class="form-input">
+            <option disabled selected>Seleeciona una opcion</option>
+            <option value="padre">Padre</option>
+            <option value="madre">Madre</option>
+            <option value="tio">Tío</option>
+            <option value="tutor">Tutor</option>
+            <option value="otro">Otro</option>
+          </select>
+          <label for="telf" class="form-label">Teléfono / Whatsapp *</label>
+          <input
+            type="tel"
+            id="telf"
+            class="form-input"
+            placeholder="Ingrese Teléfono"
+          />
+
+          <label for="correo" class="form-label">Correo Electrónico *</label>
+          <input
+            type="email"
+            id="correo"
+            class="form-input"
+            placeholder="Ingrese su correo Electrónico"
+          />
+          <label for="nivel-academico" class="form-label"
+            >Nivel al que postula *</label
+          >
+          <select
+            name="nivel-academico"
+            id="nivel-academico"
+            class="form-input"
+          >
+            <option disabled selected>Seleeciona una opcion</option>
+            <option value="inicial">Inicial</option>
+            <option value="primaria">Primaria</option>
+            <option value="Secundaria">Secundaria</option>
+          </select>
+          <button type="submit" id="enviar" class="enviar">Enviar</button>
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+      <span class="footer__logo"></span>
+      <div class="footer__container">
+        <div class="container__derechos">
+          <p class="derechosautor">
+            Copyrights © todos los derechos reservados / colegios Cecna
+          </p>
+        </div>
+        <div class="container-informacion-footer">
+          <a href="" class="info"
+            ><span><i class="fa-brands icon-info fa-square-facebook"></i></span
+            >/colegiocecna</a
+          >
+          <p class="info">
+            <span><i class="fa-solid icon-info fa-envelope"></i></span
+            >colegiocecna@gmail.com
+          </p>
+          <p class="info">
+            <span><i class="fa-solid icon-info fa-mobile-screen"></i></span
+            >945143815
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="./main.js"></script>
+  </body>
+</html>

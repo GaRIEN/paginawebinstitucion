@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- llamado para el css -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- link para fuente -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link para iconos -->
+    <script
+      src="https://kit.fontawesome.com/a3442d3abc.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__div">
+        <a href="" class="logo header__div-logo">
+          <img src="./assets/img/logo.png" alt="logo del colegio" />
+        </a>
+        <nav class="header__div-nav">
+          <ul class="nav__ul">
+            <li class="nav__ul-li">
+              <a href="#" class="li__a">Inicio</a>
+              <ul class="li__ul li__ul-inicio">
+                <li class="li__ul-li"><a href="#nosotros">Nosotros</a></li>
+                <li class="li__ul-li">
+                  <a href="#servicios-ofrecidos">Servicios</a>
+                </li>
+                <li class="li__ul-li">
+                  <a href="#infraestructura-institucion">Infraestructura</a>
+                </li>
+                <li class="li__ul-li">
+                  <a href="#galeria-fotos-institucion">Galería</a>
+                </li>
+                <li class="li__ul-li"><a href="#ubicacion">Ubicacion</a></li>
+              </ul>
+            </li>
+            <li class="nav__ul-li">
+              <a href="#" class="li__a">Nivel Educativo</a>
+              <ul class="li__ul li__ul-nivel-educativo">
+                <li class="li__ul-li"><a href="./educacion-inicial.html">Educacion Inicial</a></li>
+                <li class="li__ul-li"><a href="./educacion-primaria.html">Educacion Primaria</a></li>
+                <li class="li__ul-li"><a href="./educacion-secundaria.html">Educacion Secundaria</a></li>
+                <!-- <li class="li__ul-li">
+                  <a href="">programas complementarios</a>
+                </li> -->
+              </ul>
+            </li>
+            <li class="nav__ul-li">
+              <a href="#" class="li__a">Angenda Cecna</a>
+            </li>
+            <li class="nav__ul-li nav__ul-li-matriculate">
+              <a href="./matricula.html" class="li__a">Matricúlate</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <span class="header__icon-menu"><i class="fa-solid fa-bars"></i></span>
+    </header>
+
+    <main class="main">
+      <div class="container__video">
+        <video class="container__video--informativo" autoplay muted loop>
+          <source src="./assets/Video/naturaleza.mp4" type="video/mp4" />
+          <track
+            kind="captions"
+            label="Subtítulos en español"
+            src="subtitulos.vtt"
+            srclang="es"
+          />
+        </video>
+      </div>
+      <div class="container__poster">
+        <img
+          class="poster__img"
+          src="./assets/img/poster-institucion.jpg"
+          alt="poster de la isntitucion educativa"
+        />
+      </div>
+      <section class="main__section--informationIns" id="nosotros">
+        <!-- informacion sobre la institucion -->
+        <div class="informationIns__container--bienvenido">
+          <h1 class="bienvenido__title">
+            Bienvenidos a <br /><span>COLEGIOS CECNA</span>
+          </h1>
+          <hr class="bienvenido__separador" />
+          <p class="bienvenido__parrafo">
+            Como pioneros en el sistema de tutoría en el Perú, nuestro modelo de
+            formación está centrado en el desarrollo de la creatividad y el
+            conocimiento, fortaleciendo los valores éticos y potenciando el
+            talento de cada uno de nuestros alumnos.
+          </p>
+        </div>
+        <!-- servicios que ofrece -->
+        <div class="informationIns__container--nosotros">
+          <div class="nosotros__container--img">
+            <img src="./assets/img/birrete.jpg" alt="Imagen 1" />
+            <div class="img__title"><p>Alto nivel Academico</p></div>
+          </div>
+          <div class="nosotros__container--img">
+            <img src="./assets/img/artistica.jpg" alt="Imagen 1" />
+            <div class="img__title"><p>Alto nivel Academico</p></div>
+          </div>
+          <div class="nosotros__container--img">
+            <img src="./assets/img/deportes.jpg" alt="Imagen 1" />
+            <div class="img__title"><p>Alto nivel Academico</p></div>
+          </div>
+          <div class="nosotros__container--img">
+            <img src="./assets/img/valores.jpg" alt="Imagen 1" />
+            <div class="img__title"><p>Alto nivel Academico</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__section--servicios" id="servicios-ofrecidos">
+        <div class="section__servicios--educacionCalidad">
+          <h2 class="educacionCalidad__container--title">
+            Educación de <br /><span>CALIDAD</span>
+          </h2>
+          <hr class="educacionCalidad__container--separador" />
+          <p class="educacionCalidad__container--parrafo">
+            Ofrecemos una propuesta educativa altamente contemporánea en todos
+            nuestros niveles, abarcando desde la educación inicial hasta la
+            primaria y secundaria.
+          </p>
+        </div>
+        <div class="servicios__container">
+          <div class="servicios__container--card">
+            <div class="card__imagen">
+              <div class="card__imagen--fondoCurvo">
+                <img src="./assets/svg/fondo_institucion-1.svg" alt="" />
+                <div>
+                  <span class="imagen__fondoCurvo--icon"
+                    ><i class="fa-regular fa-face-grin-wide"></i
+                  ></span>
+                  <p class="imagen__fondoCurvo--servicio">Inicial</p>
+                </div>
+              </div>
+              <img src="./assets/img/Inicial.jpg" alt="" />
+              <buttom class="container__card--button">Ver más</buttom>
+            </div>
+          </div>
+          <div class="servicios__container--card">
+            <div class="card__imagen">
+              <div class="card__imagen--fondoCurvo">
+                <img src="./assets/svg/fondo_institucion-2.svg" alt="" />
+                <div>
+                  <span class="imagen__fondoCurvo--icon"
+                    ><i class="fa-solid fa-pen-ruler"></i
+                  ></span>
+                  <p class="imagen__fondoCurvo--servicio primaria">PRIMARIA</p>
+                </div>
+              </div>
+              <img src="./assets/img/Inicial.jpg" alt="" />
+              <buttom class="container__card--button buttom-primaria"
+                >Ver más</buttom
+              >
+            </div>
+          </div>
+          <div class="servicios__container--card">
+            <div class="card__imagen">
+              <div class="card__imagen--fondoCurvo">
+                <img src="./assets/svg/fondo_institucion-3.svg" alt="" />
+                <div>
+                  <span class="imagen__fondoCurvo--icon"
+                    ><i class="fa-solid fa-user-graduate"></i
+                  ></span>
+                  <p class="imagen__fondoCurvo--servicio secundaria">
+                    SECUNDARIA
+                  </p>
+                </div>
+              </div>
+              <img src="./assets/img/Inicial.jpg" alt="" />
+              <buttom class="container__card--button buttom-secundaria"
+                >Ver más</buttom
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="main__section--infraestructura"
+        id="infraestructura-institucion"
+      >
+        <div class="infraestructura__information--container">
+          <h2 class="information__container--title">
+            Disponemos de una <br /><span>Infraestructura especializada</span>
+          </h2>
+          <hr class="information__container--separador" />
+          <p class="information__container--parrafo">
+            Cada uno de nuestros espacios está diseñado con precisión para
+            inspirar el aprendizaje. Nuestras instalaciones modernas y
+            tecnológicamente equipadas fomentan la creatividad y el pensamiento
+            crítico, brindando a nuestros estudiantes un entorno propicio para
+            alcanzar su máximo potencial.
+          </p>
+        </div>
+        <div class="infraestructura__information--locales">
+          <div class="locales__card">
+            <img src="https://img.freepik.com/vector-gratis/escena-edificio-escuela-grande_1308-32058.jpg?size=626&ext=jpg&ga=GA1.1.1687694167.1703548800&semt=ais" alt="Imagen 1" />
+            <div class="card__ubicacion">Moderno local Huancayo</div>
+          </div>
+          <div class="locales__card">
+            <img src="https://images.theconversation.com/files/270544/original/file-20190423-175514-1rng58t.jpg?ixlib=rb-1.1.0&rect=6%2C0%2C4236%2C2828&q=20&auto=format&w=320&fit=clip&dpr=2&usm=12&cs=strip" alt="Imagen 2" />
+            <div class="card__ubicacion">Moderno Local Oroya</div>
+          </div>
+          <div class="locales__card">
+            <img src="https://estaticos-cdn.prensaiberica.es/clip/32f65c6a-27d4-4807-9230-3430738a666c_16-9-aspect-ratio_default_0.jpg" alt="Imagen 3" />
+            <div class="card__ubicacion">Moderno Local El Tambo</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__section--galeria" id="galeria-fotos-institucion">
+        <div class="galeria__information--container">
+          <h2 class="information__container--title">
+            <br /><span>GALERÍA</span>
+          </h2>
+          <hr class="information__container--separador" />
+          <p class="information__container--parrafo">
+            ¡Explora nuestra vibrante institución educativa a través de estas
+            cautivadoras imágenes! Descubre nuestros espacios modernos,
+            estudiantes comprometidos y las numerosas actividades que hacen que
+            Colegios Cecna sea un lugar único para el aprendizaje y el
+            crecimiento.
+          </p>
+        </div>
+        <div class="slider">
+          <div class="slider--inner">
+            <img src="./assets/img/Fotos-galeria/img-1.jpg" alt="" />
+            <img src="./assets/img/Fotos-galeria/" alt="" />
+            <img src="./assets/img/Fotos-galeria//img-3.jpg" alt="" />
+            <img src="./assets/img/Fotos-galeria//img-4.jpg" alt="" />
+            <img src="./assets/img/Fotos-galeria//img-1.jpg" alt="" />
+            <img src="./assets/img/Fotos-galeria//img-5.jpg" alt="" />
+            <img src="./assets/img/Fotos-galeria//img-6.jpg" alt="" />
+            <img src="./assets/img/Fotos-galeria//img-7.jpg" alt="" />
+            <img src="./assets/img/Fotos-galeria//img-8.jpg" alt="" />
+            <img src="./assets/img/Fotos-galeria//img-9.jpg" alt="" />
+            <img src="./assets/img/Fotos-galeria//img-10.jpg" alt="" />
+            <img src="./assets/img/Fotos-galeria//img-11.jpg" alt="" />
+            <img src="./assets/img/Fotos-galeria//img-12.jpg" alt="" />
+            <img src="./assets/img/Fotos-galeria//img-13.jpg" alt="" />
+            <img src="./assets/img/Fotos-galeria//img-14.jpg" alt="" />
+            <img src="./assets/img/Fotos-galeria//img-15.jpg" alt="" />
+            <img src="./assets/img/Fotos-galeria//img-16.jpg" alt="" />
+            <img src="./assets/img/Fotos-galeria//img-17.jpg" alt="" />
+            <img src="./assets/img/Fotos-galeria//img-18.jpg" alt="" />
+            <img src="./assets/img/Fotos-galeria//img-19.jpg" alt="" />
+            <img src="./assets/img/Fotos-galeria//img-20.jpg" alt="" />
+            <img src="./assets/img/Fotos-galeria//img-21.jpg" alt="" />
+            <img src="./assets/img/Fotos-galeria//img-22.jpg" alt="" />
+            <img src="./assets/img/Fotos-galeria//img-23.jpg" alt="" />
+            <img src="./assets/img/Fotos-galeria//img-24.jpg" alt="" />
+            <img src="./assets/img/Fotos-galeria//img-25.jpg" alt="" />
+            <img src="./assets/img/Fotos-galeria//img-26.jpg" alt="" />
+            <img src="./assets/img/Fotos-galeria//img-27.jpg" alt="" />
+            <img src="./assets/img/Fotos-galeria//img-28.jpg" alt="" />
+            <img src="./assets/img/Fotos-galeria//img-29.jpg" alt="" />
+            <img src="./assets/img/Fotos-galeria//img-30.jpg" alt="" />
+            <img src="./assets/img/Fotos-galeria//img-31.jpg" alt="" />
+            <img src="./assets/img/Fotos-galeria//img-32.jpg" alt="" />
+            <img src="./assets/img/Fotos-galeria//img-33.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="main__section--ubicacion" id="ubicacion">
+        <div class="ubicacion__information--container">
+          <h2 class="information__container--title">
+            <br /><span>UBICACIÓN</span>
+          </h2>
+          <hr class="information__container--separador" />
+          <p class="information__container--parrafo">
+            Nuestra institución educativa se encuentra estratégicamente ubicada
+            en Av. Mariscal Castilla 1641 El Tambo, Huancayo, brindando un
+            entorno accesible y seguro para nuestros estudiantes y sus familias.
+            Ven a visitarnos y descubre cómo estamos comprometidos en
+            proporcionar una educación de calidad en un lugar ideal para el
+            aprendizaje.
+          </p>
+        </div>
+        <div class="ubicacion__information--maps">
+          <div class="maps__container--mapa">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d975.4643265857659!2d-75.22059773036933!3d-12.05333738772304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x910e963c689a75ef%3A0x819ecad9ec524409!2sMariscal%20Castilla%20(Real)%201641%2C%20Huancayo%2012006!5e0!3m2!1ses!2spe!4v1699374040030!5m2!1ses!2spe"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="maps__container--informacioncolegio">
+            <h2>Colegios CECNA</h2>
+            <div class="container__informacioncolegio">
+              <div class="container__informacioncolegio--card">
+                <span class="iconos-maps">
+                  <span class="informacion-ubicacion"
+                    ><i class="fa-solid icon-info fa-location-dot"></i
+                  ></span>
+                </span>
+                <p class="info">
+                  Av. Mariscal Castilla 1641 El Tambo, Huancayo
+                </p>
+              </div>
+              <div class="container__informacioncolegio--card">
+                <span class="iconos-maps">
+                  <span class="informacion-ubicacion"
+                    ><i class="fa-solid icon-info fa-phone-flip"></i
+                  ></span>
+                </span>
+                <p class="info">064415263</p>
+              </div>
+              <div class="container__informacioncolegio--card">
+                <span class="iconos-maps">
+                  <span class="informacion-ubicacion"
+                    ><i class="fa-solid icon-info fa-mobile-screen"></i
+                  ></span>
+                </span>
+                <p class="info">953 896 286</p>
+              </div>
+              <div class="container__informacioncolegio--card">
+                <span class="iconos-maps">
+                  <span class="informacion-ubicacion"
+                    ><i class="fa-solid icon-info fa-envelope"></i
+                  ></span>
+                </span>
+                <p class="info">colegioscecna@uncp.edu.pe</p>
+              </div>
+              <div class="container__informacioncolegio--card">
+                <span class="iconos-maps">
+                  <span class="informacion-ubicacion"
+                    ><i class="fa-brands icon-info fa-square-facebook"></i
+                  ></span>
+                </span>
+                <a
+                  class="info"
+                  href="https://www.facebook.com/colegioccecna"
+                  target="_blank"
+                  >/colegioccecna</a
+                >
+              </div>
+              <div class="container__informacioncolegio--card">
+                <span class="iconos-maps">
+                  <span class="informacion-ubicacion"
+                    ><i class="fa-brands icon-info fa-instagram"></i
+                  ></span>
+                </span>
+                <p class="info">/colegioccecna</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <span class="footer__logo"></span>
+      <div class="footer__container">
+        <div class="container__derechos">
+          <p class="derechosautor">
+            Copyrights © todos los derechos reservados / colegios Cecna
+          </p>
+        </div>
+        <div class="container-informacion-footer">
+          <a href="" class="info"
+            ><span><i class="fa-brands icon-info fa-square-facebook"></i></span
+            >/colegiocecna</a
+          >
+          <p class="info">
+            <span><i class="fa-solid icon-info fa-envelope"></i></span
+            >colegiocecna@gmail.com
+          </p>
+          <p class="info">
+            <span><i class="fa-solid icon-info fa-mobile-screen"></i></span
+            >945143815
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="./main.js"></script>
+  </body>
+</html>
