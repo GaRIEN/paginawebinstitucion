@@ -3,46 +3,21 @@ const menu = document.querySelector(".header__div");
 const nav = document.querySelector(".header__div-nav");
 const submenuItems = document.querySelectorAll(".li__ul-li");
 const main = document.querySelector(".main");
-
-iconMenu.addEventListener("click", menuMovile);
-main.addEventListener("click", salirnav);
-submenuItems.forEach((item) => {
-  item.addEventListener("click", ocultarsubmenu);
+// estilos para formulario
+const enviarWhats = document.querySelectorAll(".enviar");
+enviarWhats.forEach((enviar) => {
+  enviar.addEventListener("click", enviarFormulario);
+  console.log("hiciste click en enviar");
 });
-
-function menuMovile() {
-  menu.classList.toggle("menubar");
-  nav.classList.remove("prueba");
-}
-
-function ocultarsubmenu() {
-  nav.classList.toggle("prueba");
-}
-function salirnav() {
-  menu.classList.remove("menubar");
-  nav.classList.remove("prueba");
-}
 
 //para la galeria de fotos del index
 let sliderInner = document.querySelector(".slider--inner");
 let index = 1;
 
-setInterval(function () {
-  let imagenes = sliderInner.querySelectorAll("img");
-  let porcentaje = index * -100;
-  sliderInner.style.transform = "translateX(" + porcentaje + "%)";
-  index++;
-
-  if (index > imagenes.length - 1) {
-    index = 0;
-  }
-}, 2100);
-
-// estilos para formulario
-const enviarWhats = document.querySelectorAll(".enviar");
-
-enviarWhats.forEach((enviar) => {
-  enviar.addEventListener("click", enviarFormulario);
+iconMenu.addEventListener("click", menuMovile);
+main.addEventListener("click", salirnav);
+submenuItems.forEach((item) => {
+  item.addEventListener("click", ocultarsubmenu);
 });
 
 function enviarFormulario() {
@@ -52,7 +27,7 @@ function enviarFormulario() {
   let telefono = document.querySelector("#telf").value;
   let correo = document.querySelector("#correo").value;
   let nivelacademico = document.querySelector("#nivel-academico").value;
-  let numero = "5199999999";
+  let numero = "51945143815";
   if (
     nombre.length == 0 ||
     apellidos.length == 0 ||
@@ -72,3 +47,27 @@ function enviarFormulario() {
     console.log("Mensaje enviado");
   }
 }
+
+function menuMovile() {
+  menu.classList.toggle("menubar");
+  nav.classList.remove("prueba");
+}
+
+function ocultarsubmenu() {
+  nav.classList.toggle("prueba");
+}
+function salirnav() {
+  menu.classList.remove("menubar");
+  nav.classList.remove("prueba");
+}
+
+setInterval(function () {
+  let imagenes = sliderInner.querySelectorAll("img");
+  let porcentaje = index * -100;
+  sliderInner.style.transform = "translateX(" + porcentaje + "%)";
+  index++;
+
+  if (index > imagenes.length - 1) {
+    index = 0;
+  }
+}, 2100);
