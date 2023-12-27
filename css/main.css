@@ -290,6 +290,7 @@ body {
   border: solid 3px white;
 }
 .main .main__section--servicios .servicios__container .servicios__container--card .card__imagen {
+  position: relative;
   width: 100%;
   height: 100%;
   display: flex;
@@ -627,12 +628,8 @@ body {
 
 /*styles para eduacion inicial*/
 .main__educacion .img-primaria {
-  background-image: url("https://static.educaweb.com/img/news/ni%C3%B1os-primaria-ordenador.jpg");
   width: 100%;
   height: 450px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -642,6 +639,24 @@ body {
 }
 .main__educacion .img-primaria h1 {
   text-shadow: 7px 7px 10px rgba(0, 0, 0, 0.7);
+}
+.main__educacion .portada-inicial {
+  background-image: url("../assets/img/Inicial/portada-inicial.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.main__educacion .portada-primaria {
+  background-image: url("../assets/img/primaria/portada-primaria.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.main__educacion .portada-secundaria {
+  background-image: url("../assets/img/primaria/portada-primaria.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .main__educacion .primaria__container {
   display: flex;

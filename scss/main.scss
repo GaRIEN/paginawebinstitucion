@@ -306,6 +306,7 @@ $text-color-2: white;
         min-height: 450px;
         border: solid 3px $text-color-2;
         .card__imagen {
+          position: relative;
           width: 100%;
           height: 100%;
           display: flex;
@@ -653,12 +654,8 @@ $text-color-2: white;
 
 .main__educacion {
   .img-primaria {
-    background-image: url("https://static.educaweb.com/img/news/ni%C3%B1os-primaria-ordenador.jpg");
     width: 100%;
     height: 450px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -668,6 +665,24 @@ $text-color-2: white;
     h1 {
       text-shadow: 7px 7px 10px rgba(0, 0, 0, 0.7);
     }
+  }
+  .portada-inicial {
+    background-image: url("../assets/img/Inicial/portada-inicial.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+    .portada-primaria {
+    background-image: url("../assets/img/primaria/portada-primaria.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+      .portada-secundaria {
+    background-image: url("../assets/img/primaria/portada-primaria.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
   .primaria__container {
     display: flex;
@@ -809,7 +824,7 @@ $text-color-2: white;
 
 /*styles para eduacion inicial*/
 .main-matricula {
-padding: 70px;
+  padding: 70px;
   .contenedor-form {
     .form {
       background: white;
