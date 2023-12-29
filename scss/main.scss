@@ -39,6 +39,7 @@ $text-color-2: white;
       img {
         width: 100%;
         height: 100%;
+        filter: drop-shadow(2px 4px 10px $text-color-2);
       }
     }
     .header__div-logo {
@@ -366,18 +367,27 @@ $text-color-2: white;
             display: block;
             background: $complementario-color;
             font-weight: 500;
-            color: $text-color-2;
             border-radius: 20px;
             font-size: 1.4rem;
             cursor: pointer;
+            &:hover {
+              transform: scale(1.1);
+            }
+            a {
+              color: $text-color-2;
+            }
           }
           .buttom-primaria {
             background: $secundary-color;
-            color: $text-color-1;
+            a {
+              color: $text-color-1;
+            }
           }
           .buttom-secundaria {
             background: $triada-color-2;
-            color: rebeccapurple;
+            a {
+              color: rebeccapurple;
+            }
           }
         }
       }
@@ -672,13 +682,13 @@ $text-color-2: white;
     background-position: center;
     background-size: cover;
   }
-    .portada-primaria {
+  .portada-primaria {
     background-image: url("../assets/img/primaria/portada-primaria.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
-      .portada-secundaria {
+  .portada-secundaria {
     background-image: url("../assets/img/primaria/portada-primaria.jpeg");
     background-repeat: no-repeat;
     background-position: center;
@@ -725,13 +735,9 @@ $text-color-2: white;
   .primaria__postula {
     width: 100%;
     .postula__banner {
-      background-image: url(https://www.winston93.edu.mx/wp-content/uploads/2021/04/WC-23.png);
       width: 100%;
       height: 600px;
       position: relative;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
       img {
         position: absolute;
         width: 100%;
@@ -772,6 +778,24 @@ $text-color-2: white;
           text-align: center;
         }
       }
+    }
+    .banner-inicial {
+      background-image: url(../assets/img/Inicial/fotografia-parque.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    .banner-primaria {
+      background-image: url(../assets/img/primaria/primariaportada.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    .banner-secundaria {
+      background-image: url(../assets/img/Secundaria/fotografia-1.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
     }
   }
   .fondo {

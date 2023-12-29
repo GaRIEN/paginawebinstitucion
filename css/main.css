@@ -33,6 +33,7 @@ body {
 .header .header__div .logo img {
   width: 100%;
   height: 100%;
+  filter: drop-shadow(2px 4px 10px white);
 }
 .header .header__div .header__div-logo {
   margin: 10px 0 0 50px;
@@ -350,17 +351,26 @@ body {
   display: block;
   background: #ffb417;
   font-weight: 500;
-  color: white;
   border-radius: 20px;
   font-size: 1.4rem;
   cursor: pointer;
 }
+.main .main__section--servicios .servicios__container .servicios__container--card .card__imagen .container__card--button:hover {
+  transform: scale(1.1);
+}
+.main .main__section--servicios .servicios__container .servicios__container--card .card__imagen .container__card--button a {
+  color: white;
+}
 .main .main__section--servicios .servicios__container .servicios__container--card .card__imagen .buttom-primaria {
   background: #17ffff;
+}
+.main .main__section--servicios .servicios__container .servicios__container--card .card__imagen .buttom-primaria a {
   color: black;
 }
 .main .main__section--servicios .servicios__container .servicios__container--card .card__imagen .buttom-secundaria {
   background: #beff17;
+}
+.main .main__section--servicios .servicios__container .servicios__container--card .card__imagen .buttom-secundaria a {
   color: rebeccapurple;
 }
 .main .main__section--infraestructura {
@@ -700,13 +710,9 @@ body {
   width: 100%;
 }
 .main__educacion .primaria__postula .postula__banner {
-  background-image: url(https://www.winston93.edu.mx/wp-content/uploads/2021/04/WC-23.png);
   width: 100%;
   height: 600px;
   position: relative;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 .main__educacion .primaria__postula .postula__banner img {
   position: absolute;
@@ -747,6 +753,24 @@ body {
   font-weight: 800;
   font-size: 18px;
   text-align: center;
+}
+.main__educacion .primaria__postula .banner-inicial {
+  background-image: url(../assets/img/Inicial/fotografia-parque.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.main__educacion .primaria__postula .banner-primaria {
+  background-image: url(../assets/img/primaria/primariaportada.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.main__educacion .primaria__postula .banner-secundaria {
+  background-image: url(../assets/img/Secundaria/fotografia-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .main__educacion .fondo {
   background-image: url(../assets/img/fondo-pagina.jpg);
