@@ -5,12 +5,10 @@
   list-style: none;
   text-decoration: none;
 }
-
 body {
   font-size: 62.5%;
   font-family: "Roboto", sans-serif;
 }
-
 $primary-color: #176cff;
 $secundary-color: #17ffff;
 $terciary-color: #17b5ff;
@@ -19,6 +17,17 @@ $triada-color-2: #beff17;
 $complementario-color: #ffb417;
 $text-color-1: black;
 $text-color-2: white;
+@mixin flex($content, $aligan) {
+  display: flex;
+  justify-content: $content;
+  align-items: $aligan;
+}
+@mixin imagen-fondo($url, $repeat, $position, $size) {
+  background-image: $url;
+  background-repeat: $repeat;
+  background-position: $position;
+  background-size: $size;
+}
 
 .header {
   position: absolute;
@@ -191,10 +200,8 @@ $text-color-2: white;
     }
 
     .informationIns__container--nosotros {
-      display: flex;
+      @include flex(center, center);
       flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
       padding: 20px;
       z-index: -100;
       .nosotros__container--img {
@@ -238,9 +245,7 @@ $text-color-2: white;
         .img__title {
           width: 100%;
           height: 100%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
+          @include flex(center, center);
           z-index: 100;
           position: absolute;
           background-color: rgba(0, 0, 0, 0.4);
@@ -259,10 +264,8 @@ $text-color-2: white;
   .main__section--servicios {
     width: 100%;
     margin: 0 auto;
-    display: flex;
+    @include flex(center, center);
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     gap: 60px;
     background-color: #176cff;
     .section__servicios--educacionCalidad {
@@ -294,10 +297,8 @@ $text-color-2: white;
       max-width: 1800px;
       padding: 10px 20px 50px 20px;
       margin: 0 auto;
-      display: flex;
+      @include flex(center, center);
       flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
       gap: 60px;
       .servicios__container--card {
         position: relative;
@@ -314,9 +315,7 @@ $text-color-2: white;
           justify-content: center;
           .card__imagen--fondoCurvo {
             position: absolute;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex(center, center);
             flex-direction: column;
             img {
               width: 100%;
@@ -420,10 +419,8 @@ $text-color-2: white;
       }
     }
     .infraestructura__information--locales {
-      display: flex;
+      @include flex(center, center);
       flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
       margin: 0 auto;
       max-width: 1000px;
       gap: 15px;
@@ -643,10 +640,8 @@ $text-color-2: white;
     }
     .container-informacion-footer {
       width: 100%;
-      display: flex;
+      @include flex(end, end);
       flex-direction: column;
-      justify-content: end;
-      align-items: end;
       .info {
         font-size: 1rem;
         color: #fcfcfc;
@@ -666,9 +661,7 @@ $text-color-2: white;
   .img-primaria {
     width: 100%;
     height: 450px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(center, center);
     padding-top: 60px;
     color: white;
     font-size: 22px;
@@ -677,35 +670,37 @@ $text-color-2: white;
     }
   }
   .portada-inicial {
-    background-image: url("../assets/img/Inicial/portada-inicial.jpeg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    @include imagen-fondo(
+      url("../assets/img/Inicial/portada-inicial.jpeg"),
+      no-repeat,
+      center,
+      cover
+    );
   }
   .portada-primaria {
-    background-image: url("../assets/img/primaria/portada-primaria.jpeg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    @include imagen-fondo(
+      url("../assets/img/primaria/portada-primaria.jpeg"),
+      no-repeat,
+      center,
+      cover
+    );
   }
   .portada-secundaria {
-    background-image: url("../assets/img/primaria/portada-primaria.jpeg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    @include imagen-fondo(
+      url("../assets/img/primaria/portada-primaria.jpeg"),
+      no-repeat,
+      center,
+      cover
+    );
   }
   .primaria__container {
-    display: flex;
+    @include flex(space-between, center);
     max-width: 1220px;
     margin: 0 auto;
     padding: 120px 20px;
-    align-items: center;
-    justify-content: space-between;
     .primaria__section {
-      display: flex;
+      @include flex(center, center);
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
       .barra {
         background-color: $primary-color;
         width: 30%;
@@ -752,9 +747,7 @@ $text-color-2: white;
         padding: 35px 70px;
         color: white;
         bottom: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(center, center);
         gap: 50px;
         h3 {
           font-size: 30px;
@@ -780,22 +773,28 @@ $text-color-2: white;
       }
     }
     .banner-inicial {
-      background-image: url(../assets/img/Inicial/fotografia-parque.jpg);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
+      @include imagen-fondo(
+        url(../assets/img/Inicial/fotografia-parque.jpg),
+        no-repeat,
+        center,
+        cover
+      );
     }
     .banner-primaria {
-      background-image: url(../assets/img/primaria/primariaportada.jpg);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
+      @include imagen-fondo(
+        url(../assets/img/primaria/primariaportada.jpg),
+        no-repeat,
+        center,
+        cover
+      );
     }
     .banner-secundaria {
-      background-image: url(../assets/img/Secundaria/fotografia-1.jpg);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
+      @include imagen-fondo(
+        url(../assets/img/Secundaria/fotografia-1.jpg),
+        no-repeat,
+        center,
+        cover
+      );
     }
   }
   .fondo {
@@ -805,13 +804,11 @@ $text-color-2: white;
     background-color: rgba(255, 255, 255, 0.9);
     background-blend-mode: lighten;
     .eventos__container {
-      display: flex;
+      @include flex(space-between, center);
       flex-direction: column;
       max-width: 1220px;
       margin: 0 auto;
       padding: 80px 20px;
-      align-items: center;
-      justify-content: space-between;
       h2 {
         font-size: 32px;
         text-align: center;

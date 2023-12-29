@@ -174,9 +174,9 @@ body {
 }
 .main .main__section--informationIns .informationIns__container--nosotros {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   padding: 20px;
   z-index: -100;
 }
@@ -241,9 +241,9 @@ body {
   width: 100%;
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 60px;
   background-color: #176cff;
 }
@@ -277,9 +277,9 @@ body {
   padding: 10px 20px 50px 20px;
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 60px;
 }
 .main .main__section--servicios .servicios__container .servicios__container--card {
@@ -402,9 +402,9 @@ body {
 }
 .main .main__section--infraestructura .infraestructura__information--locales {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   margin: 0 auto;
   max-width: 1000px;
   gap: 15px;
@@ -622,9 +622,9 @@ body {
 .footer .footer__container .container-informacion-footer {
   width: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: end;
   align-items: end;
+  flex-direction: column;
 }
 .footer .footer__container .container-informacion-footer .info {
   font-size: 1rem;
@@ -670,17 +670,17 @@ body {
 }
 .main__educacion .primaria__container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   max-width: 1220px;
   margin: 0 auto;
   padding: 120px 20px;
-  align-items: center;
-  justify-content: space-between;
 }
 .main__educacion .primaria__container .primaria__section {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .main__educacion .primaria__container .primaria__section .barra {
   background-color: #176cff;
@@ -781,12 +781,12 @@ body {
 }
 .main__educacion .fondo .eventos__container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   flex-direction: column;
   max-width: 1220px;
   margin: 0 auto;
   padding: 80px 20px;
-  align-items: center;
-  justify-content: space-between;
 }
 .main__educacion .fondo .eventos__container h2 {
   font-size: 32px;
