@@ -876,6 +876,7 @@ body {
   cursor: pointer;
 }
 
+/*programa complementarios*/
 @media screen and (min-width: 300px) and (max-width: 767px) {
   .header {
     display: flex;
@@ -953,9 +954,6 @@ body {
     grid-column: span 3;
     grid-row: span 1;
   }
-  .footer .footer__container {
-    gap: 20px;
-  }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .header .header__div .header__div-nav {
@@ -968,5 +966,19 @@ body {
 @media screen and (min-width: 1024px) {
   .header .header__div .header__div-nav {
     display: inline-block;
+  }
+}
+@media (max-width: 510px) {
+  .footer .footer__container {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer .footer__container .container-informacion-footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
 }/*# sourceMappingURL=main.css.map */
